@@ -1,20 +1,50 @@
+This OpenGL application renders one cyan-colored star constructed entirely using triangles on a yellow background. The program demonstrates the use of Modern OpenGL (Core Profile) concepts such as vertex buffers, vertex arrays, and shader programs. The window displays the student’s information as the title and follows proper rendering and input-handling practices.
 
-# Setup
+Requirements Fulfilled
+Created a dedicated GitHub repository for the CGM course
+Yellow background window
+One cyan-colored star built only using triangles
+Star rendered using glDrawArrays(GL_TRIANGLES)
+Vertex Array Object (VAO) and Vertex Buffer Object (VBO) used
+Modern OpenGL Core Profile (3.3) followed
+Proper code structure, formatting, and comments
+Original work implemented and tested locally
+README documentation included
+Output screenshot attached
+Program Features
+Graphics API: OpenGL 3.3 Core Profile
+Window Management: GLFW
+Function Loader: GLAD
+Primitive Used: Triangles only
+Window Properties
+Resolution: 800 × 600 pixels
+Background Color: Yellow (1.0, 1.0, 0.0)
+Window Title: Student Information
+Rendering Details
+One cyan-colored star
+Star shape constructed exclusively from multiple triangles
+All triangle vertices are defined manually
+Rendering performed using:
+Vertex Buffer Object (VBO)
+Vertex Array Object (VAO)
+Fragment shader outputs cyan color (0.0, 1.0, 1.0, 1.0)
+Keyboard Interaction
+Keyboard input handled using GLFW
+Turns the window off by pressing "M"
 
-## 1.  Windows ##
+Technologies Used
+C++
+OpenGL
+GLFW
+GLAD
+Output Screenshot
+Cyan Star Output
 
-   * ### Download glfw libray from https://www.glfw.org/download.html. Download *64-bit Windows binaries* from *Windows pre-compiled binaries*. ###  
-   * ### Create **build** and **lib** folder in Code Repo. Put *glfw3.dll* from *lib-mingw-w64* folder of glfw library to **build** and **lib** folder.  ###
-   * ### For C++ compiler and make, Download MSYS2 Package Manager from https://www.msys2.org/ . ###  
-   * ### Run following commands in MSYS2 terminal: ```pacman -S base-devel``` and ```pacman -S gcc``` . ### 
-   * ### add your bin folder (which includes g++.exe and make.exe) PATH (C:\msys64\usr\bin) of msys64 installation directory in your environment variable.
-   * ### Run ```make win``` in Terminal. ###
-   * ### ```.exe``` file will be in **build** folder. ###
-   * ### if your code does not run, then you have to check openGL version by installing GLview from http://www.realtech-vr.com/home/glview . If your openGL version is below 3.3, then update windows. ### 
-​
-## 2. Linux ##
+Author
+Shobnom Sultana Muskan
+ID – 0432320005101142
 
-   * ### Run following command in Terminal:  ```sudo apt-get install libglfw3-dev``` ###  
-   * ### Create **build** and **lib** folder in Code Repo. ###
-   * ### Run ```make linux``` in terminal. ###
-   * ### executable file will be in **build** folder. ###
+Notes
+The star is composed strictly of triangles to meet assignment constraints
+Modern OpenGL pipeline is followed (no deprecated functions)
+Project is intended for academic and learning purposes
